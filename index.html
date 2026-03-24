@@ -32,6 +32,15 @@
 }
 html { scroll-behavior: smooth; }
 body { font-family: 'Outfit', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+
+body::after {
+  content: '';
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-image: url('texture.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.04;
+}
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg2); }
 ::-webkit-scrollbar-thumb { background: var(--bg4); border-radius: 2px; }
